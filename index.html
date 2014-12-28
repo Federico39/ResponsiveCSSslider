@@ -1,0 +1,163 @@
+<html>
+	<!-- 
+		Pure Responsive CSS Slider
+		Syed Arif Rahman
+		arifkh77@yahoo.com
+		01715 551145
+
+		Note: Here css use just for this types of images. You can manage your own css easily.
+	 -->
+	<head>
+		<title>
+			Pure CSS Image Slider
+		</title>
+		<link rel="stylesheet" href="bootstrap.min.css" type="text/css" media="all" />
+  		<link rel="stylesheet" href="bootstrap-theme.min.css" type="text/css" media="all" />
+		<style type="text/css">
+		body{background:#000;}
+		.slide1{
+		  margin:50px auto;
+		  height:250px;
+		  text-align: center;
+		  overflow:hidden;
+		  position:relative;
+		  float: left;
+		  padding-right: 192px;
+		}
+		.slide2{
+		  margin:50px auto;
+		  height:250px;
+		  text-align: center;
+		  overflow:hidden;
+		  position:relative;
+		  float: left;
+
+		}
+		.slide3{
+		  margin:50px auto;
+		  height:250px;
+		  text-align: center;
+		  overflow:hidden;
+		  position:relative;
+		  float: left;
+		  
+		}
+		.slide4{
+		  margin:50px auto;
+		  height:250px;
+		  text-align: center;
+		  overflow:hidden;
+		  position:relative;
+		  float: left;
+
+		}
+		.photo1{
+		  position:absolute;
+		  animation:slide1 16s infinite;
+		  -webkit-animation:slide1 16s infinite;
+		  opacity:0;
+		  
+		}
+		.photo2{
+		  position:absolute;
+		  animation:slide2 8s infinite;
+		  -webkit-animation:slide2 8s infinite;
+		  opacity:0;
+		  
+		}
+		@keyframes slide1{   
+		  25%{opacity:1;}
+		  40%{opacity:0;}
+		}
+		@-webkit-keyframes slide1{   
+		  25%{opacity:1;}
+		  40%{opacity:0;}
+		}
+
+		@keyframes slide2{   
+		  50%{opacity:1;}
+		  80%{opacity:0;}
+		}
+		@-webkit-keyframes slide2{   
+		  50%{opacity:1;}
+		  80%{opacity:0;}
+		} 
+
+		img:nth-child(4){animation-delay:0s;-webkit-animation-delay:0s;}
+		img:nth-child(3){animation-delay:4s;-webkit-animation-delay:4s;}
+		img:nth-child(2){animation-delay:8s;-webkit-animation-delay:8s;}
+		img:nth-child(1){animation-delay:12s;-webkit-animation-delay:12s;}
+
+		.slide2 img:nth-child(1){animation-delay:0s;-webkit-animation-delay:0s;}
+		.slide2 img:nth-child(2){animation-delay:4s;-webkit-animation-delay:4s;}
+
+
+		@media screen and (min-width: 0px) and (max-width: 767px) {
+			.slide1{
+				padding-right: 269px;
+			}
+			.slide2{
+				padding-right: 269px;
+			}
+			.slide3{
+				padding-right: 269px;
+			}
+
+		}
+		@media screen and (min-width: 768px) and (max-width: 995px) {
+			.slide1{
+				padding-right: 269px;
+			}
+			.slide2{
+				padding-right: 269px;
+			}
+			.slide3{
+				padding-right: 269px;
+			}
+			
+		}
+		@media screen and (min-width: 996px){
+			.slide1{
+				padding-right: 192px;
+			}
+			.slide2{
+				padding-right: 192px;
+			}
+			.slide3{
+				padding-right: 192px;
+			}
+
+		}
+		</style>
+	</head>
+	<body>
+		<div class="col-md-12" style="text-align:center;color:#fff;">
+			
+			<h2>Pure Responsive CSS Image Slider</h2>
+
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 slide1" >
+				  <img class='photo1'  src="1.jpg" alt="" />
+				  <img class='photo1'  src="2.jpg" alt="" />
+				  <img class='photo1'  src="3.jpg" alt="" />
+				  <img class='photo1'  src="4.jpg" alt="" />
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 slide2">
+				  <img class='photo2'  src="5.jpg" alt="" />
+				  <img class='photo2'  src="6.jpg" alt="" />				  
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 slide3">
+				  <img class='photo1'  src="7.jpg" alt="" />
+				  <img class='photo1'  src="8.jpg" alt="" />
+				  <img class='photo1'  src="9.jpg" alt="" />
+				  <img class='photo1'  src="10.jpg" alt="" />
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 slide4">
+				  <img class='photo'  src="11.jpg" alt="" />  
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
